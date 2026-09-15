@@ -124,11 +124,13 @@
     color: #5a6b7d;
   }
   .qr-img {
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
     border-radius: 12px;
     margin: 12px auto;
     display: block;
+    box-shadow: 0 4px 14px rgba(45,59,78,0.12);
   }
   .bank-details {
     text-align: left;
@@ -194,16 +196,15 @@
     <section class="card gift-section">
       <h2 style="justify-content:center">🎁 Can't make it?</h2>
       <p>No worries at all &mdash; your love means the world to us! If you'd like to send Milo a little birthday gift, you can scan the QR code below.</p>
-      <img class="qr-img" src="assets/qr-placeholder.svg" alt="Bank transfer QR code placeholder">
+      <img class="qr-img" src="assets/bank-qr.jpg" alt="VPBank VietQR code for bank transfer">
       <dl class="bank-details">
         <dt>Bank</dt>
-        <dd>[Your Bank Name]</dd>
+        <dd>VPBank</dd>
         <dt>Account Name</dt>
-        <dd>[Account Holder Name]</dd>
+        <dd>BUI NGUYEN HOANG THONG</dd>
         <dt>Account Number</dt>
-        <dd>[Account Number]</dd>
+        <dd>231289283</dd>
       </dl>
-      <p class="note">Replace assets/qr-placeholder.svg with your real bank QR code image before publishing.</p>
     </section>
 
     <footer>

@@ -6,8 +6,7 @@ A simple single-page invite site with the party date, a map to the venue, and a 
 
 - **Placeholders to update in [index.html](index.html):**
   - Party time (currently `10:00 AM – 1:00 PM`)
-  - Bank details in the "Can't make it?" section (bank name, account name, account number)
-- **QR code:** replace [assets/qr-placeholder.svg](assets/qr-placeholder.svg) with your real bank transfer QR image. Keep the filename `assets/qr-placeholder.svg`, or update the `src` in `index.html` if you rename/change the file type (e.g. `assets/qr.png`).
+- **QR code:** the real VPBank VietQR image is at [assets/bank-qr.jpg](assets/bank-qr.jpg), referenced from the "Can't make it?" section.
 - **Venue/map:** currently set to Long Biên Palace. To change it, update the `iframe src` (swap the lat/lng) and the "Get Directions" link in `index.html`.
 
 ## Publishing to GitHub Pages
