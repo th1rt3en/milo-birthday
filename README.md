@@ -4,8 +4,6 @@ A simple single-page invite site with the party date, a map to the venue, and a 
 
 ## Editing before publishing
 
-- **Placeholders to update in [index.html](index.html):**
-  - Party time (currently `10:00 AM – 1:00 PM`)
 - **QR code:** the real VPBank VietQR image is at [assets/bank-qr.jpg](assets/bank-qr.jpg), referenced from the "Can't make it?" section.
 - **Venue/map:** currently set to Long Biên Palace. To change it, update the `iframe src` (swap the lat/lng) and the "Get Directions" link in `index.html`.
 

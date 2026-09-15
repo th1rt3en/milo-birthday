@@ -3,66 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Milo Turns One! 🎈</title>
+<title>Milo Turns One! 🐋</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --sky: #bfe3f0;
-    --sky-deep: #7fc4de;
-    --cream: #fffaf0;
-    --gold: #f2b84b;
-    --navy: #2d3b4e;
-    --pink: #f6a6b2;
+    --mint: #d7f3ea;
+    --mint-deep: #a8e0cd;
+    --teal: #3f9d92;
+    --navy: #2c4a5e;
+    --coral: #f6a6a0;
+    --coral-deep: #ef8b84;
+    --gold: #f6b93b;
+    --cream: #fbfdf9;
     --card: #ffffff;
+    --ink-soft: #5a7a7d;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif;
-    background: linear-gradient(180deg, var(--sky) 0%, var(--cream) 45%);
+    font-family: 'Nunito', 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif;
+    background: linear-gradient(180deg, var(--mint) 0%, var(--cream) 55%);
     color: var(--navy);
+  }
+  h1, h2, .heading-font {
+    font-family: 'Baloo 2', 'Trebuchet MS', sans-serif;
   }
   .wrap {
     max-width: 640px;
     margin: 0 auto;
     padding: 0 20px 60px;
+    position: relative;
+  }
+  .bubbles {
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 10px;
+    padding-top: 20px;
+    opacity: 0.8;
   }
   header.hero {
     text-align: center;
-    padding: 56px 20px 40px;
+    padding: 10px 20px 30px;
   }
-  .balloons {
-    font-size: 2.4rem;
-    letter-spacing: 12px;
-    margin-bottom: 8px;
+  .whale-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
   }
   .one {
+    font-family: 'Baloo 2', sans-serif;
     font-size: 5.5rem;
-    font-weight: 900;
+    font-weight: 800;
     color: var(--gold);
-    text-shadow: 3px 3px 0 rgba(0,0,0,0.06);
+    -webkit-text-stroke: 2px var(--navy);
+    text-shadow: 3px 3px 0 rgba(44,74,94,0.12);
     line-height: 1;
-    margin: 0;
+    margin: 6px 0 0;
   }
   h1 {
     font-size: 2rem;
-    margin: 10px 0 4px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 8px 0 4px;
   }
   .subtitle {
     font-size: 1.1rem;
-    color: #5a6b7d;
+    color: var(--ink-soft);
     margin: 0;
+  }
+  .wave-divider {
+    display: block;
+    width: 100%;
+    height: 28px;
+    margin: -4px 0 0;
   }
   .card {
     background: var(--card);
-    border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(45,59,78,0.08);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(44,74,94,0.10);
     padding: 28px 24px;
     margin: 24px 0;
+    border: 2px solid var(--mint-deep);
+    position: relative;
+    overflow: hidden;
   }
   .card h2 {
     margin-top: 0;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--teal);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -73,76 +105,81 @@
   .date-big {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--sky-deep);
+    color: var(--navy);
     margin: 6px 0;
   }
   .time-big {
     font-size: 1.2rem;
-    color: var(--navy);
+    color: var(--teal);
+    font-weight: bold;
     margin: 0 0 6px;
   }
   .countdown {
     display: inline-block;
     margin-top: 14px;
-    padding: 8px 18px;
-    background: var(--pink);
+    padding: 8px 20px;
+    background: var(--coral);
     color: #fff;
     border-radius: 999px;
     font-weight: bold;
     font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(239,139,132,0.35);
   }
   .venue-name {
     font-size: 1.15rem;
     font-weight: bold;
     margin: 0 0 4px;
+    color: var(--navy);
   }
   .venue-address {
-    color: #5a6b7d;
+    color: var(--ink-soft);
     margin: 0 0 16px;
   }
   .map-frame {
     width: 100%;
     height: 280px;
     border: 0;
-    border-radius: 12px;
+    border-radius: 14px;
     display: block;
   }
   .directions-btn {
     display: inline-block;
     margin-top: 14px;
-    background: var(--sky-deep);
+    background: var(--teal);
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border-radius: 999px;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(63,157,146,0.35);
   }
   .gift-section {
     text-align: center;
   }
   .gift-section p {
-    color: #5a6b7d;
+    color: var(--ink-soft);
   }
   .qr-img {
     width: 100%;
     max-width: 260px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 14px;
     margin: 12px auto;
     display: block;
-    box-shadow: 0 4px 14px rgba(45,59,78,0.12);
+    box-shadow: 0 4px 14px rgba(44,74,94,0.15);
+    border: 3px solid var(--mint-deep);
   }
   .bank-details {
     text-align: left;
-    background: #f6f8fa;
-    border-radius: 12px;
+    background: var(--mint);
+    border-radius: 14px;
     padding: 14px 18px;
     margin: 16px auto 0;
     max-width: 360px;
     font-size: 0.95rem;
   }
   .bank-details dt {
-    color: #5a6b7d;
+    color: var(--ink-soft);
     font-size: 0.8rem;
     margin-top: 8px;
   }
@@ -150,34 +187,48 @@
   .bank-details dd {
     margin: 0;
     font-weight: bold;
+    color: var(--navy);
   }
   footer {
     text-align: center;
-    color: #8a97a5;
+    color: var(--ink-soft);
     font-size: 0.85rem;
     padding-top: 10px;
   }
-  .note {
-    font-size: 0.85rem;
-    color: #9aa5b1;
-    text-align: center;
-    margin-top: 6px;
+  .footer-critters {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    letter-spacing: 6px;
   }
 </style>
 </head>
 <body>
   <div class="wrap">
+    <p class="bubbles">🫧&nbsp;&nbsp;🫧&nbsp;&nbsp;🫧</p>
+
     <header class="hero">
-      <div class="balloons">🎈🎂🎈</div>
+      <div class="whale-wrap" aria-hidden="true">
+        <svg width="160" height="120" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="66" cy="70" rx="52" ry="34" fill="#2c4a5e"/>
+          <path d="M112 55 C130 45, 148 50, 150 62 C148 66, 132 68, 118 66 Z" fill="#2c4a5e"/>
+          <ellipse cx="60" cy="82" rx="34" ry="16" fill="#eaf7f2"/>
+          <circle cx="38" cy="58" r="4.5" fill="#fff"/>
+          <circle cx="39" cy="59" r="2.2" fill="#2c4a5e"/>
+          <path d="M20 74 Q30 82 44 78" stroke="#1f3a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M46 92 Q60 84 74 92 Q60 100 46 92 Z" fill="#f6a6a0"/>
+          <circle cx="60" cy="92" r="4" fill="#ef8b84"/>
+          <path d="M6 66 Q-6 70 4 84 Q14 80 18 70 Z" fill="#2c4a5e"/>
+        </svg>
+      </div>
       <p class="one">ONE</p>
       <h1>Milo is turning 1!</h1>
-      <p class="subtitle">You're invited to celebrate with us</p>
+      <p class="subtitle">Dive in and celebrate with us 🐠</p>
     </header>
 
     <section class="card date-block">
       <h2 style="justify-content:center">📅 When</h2>
       <p class="date-big">Saturday, 3rd October 2026</p>
-      <p class="time-big">10:00 AM &ndash; 1:00 PM <span style="font-weight:normal; color:#9aa5b1;">(placeholder time)</span></p>
+      <p class="time-big">6:00 PM onwards</p>
       <span class="countdown" id="countdown">Loading countdown…</span>
     </section>
 
@@ -186,7 +237,7 @@
       <p class="venue-name">Long Biên Palace</p>
       <p class="venue-address">Ho Chi Minh City, Vietnam</p>
       <iframe class="map-frame" loading="lazy"
-        src="https://www.google.com/maps?q=10.830082,106.6501376&z=16&output=embed"
+        src="https://www.google.com/maps?q=10.830082,106.6501376&z=14&output=embed"
         allowfullscreen></iframe>
       <div style="text-align:center;">
         <a class="directions-btn" href="https://maps.app.goo.gl/rvqKp7EYrVrX3Wuo7" target="_blank" rel="noopener">Get Directions</a>
@@ -208,13 +259,14 @@
     </section>
 
     <footer>
+      <div class="footer-critters">🐋 🐠 🪼 🐙 ⭐</div>
       Made with 💙 for Milo's 1st Birthday
     </footer>
   </div>
 
 <script>
   (function () {
-    var eventDate = new Date("2026-10-03T10:00:00");
+    var eventDate = new Date("2026-10-03T18:00:00");
     var el = document.getElementById("countdown");
 
     function update() {
