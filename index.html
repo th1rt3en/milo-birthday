@@ -15,7 +15,6 @@
     --navy: #2c4a5e;
     --coral: #f6a6a0;
     --coral-deep: #ef8b84;
-    --gold: #f6b93b;
     --cream: #fbfdf9;
     --card: #ffffff;
     --ink-soft: #5a7a7d;
@@ -53,15 +52,12 @@
     justify-content: center;
     margin-bottom: 4px;
   }
-  .one {
-    font-family: 'Baloo 2', sans-serif;
-    font-size: 5.5rem;
-    font-weight: 800;
-    color: var(--gold);
-    -webkit-text-stroke: 2px var(--navy);
-    text-shadow: 3px 3px 0 rgba(44,74,94,0.12);
-    line-height: 1;
-    margin: 6px 0 0;
+  .whale-img {
+    width: 220px;
+    max-width: 70%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(44,74,94,0.15);
   }
   h1 {
     font-size: 2rem;
@@ -207,43 +203,9 @@
     <p class="bubbles">🫧&nbsp;&nbsp;🫧&nbsp;&nbsp;🫧</p>
 
     <header class="hero">
-      <div class="whale-wrap" aria-hidden="true">
-        <svg width="176" height="136" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <path id="whaleBody" d="M30,90
-                     C28,60 55,32 100,30
-                     C150,28 190,48 195,80
-                     C198,102 180,118 155,122
-                     C140,132 110,136 85,132
-                     C55,128 32,115 30,90 Z"/>
-            <clipPath id="bodyClip"><use href="#whaleBody"/></clipPath>
-          </defs>
-
-          <path d="M188,80 L216,53 L201,80 L216,107 Z" fill="#2c4a5e"/>
-          <path d="M78,118 C70,140 50,150 32,143 C46,128 60,118 80,111 Z" fill="#2c4a5e"/>
-          <use href="#whaleBody" fill="#2c4a5e"/>
-
-          <g clip-path="url(#bodyClip)">
-            <ellipse cx="100" cy="145" rx="60" ry="35" fill="#eaf7f2"/>
-          </g>
-
-          <path d="M60,113 L100,111 L89,133 L71,131 Z" fill="#f6a6a0"/>
-          <circle cx="80" cy="113" r="6.5" fill="#ef8b84"/>
-
-          <ellipse cx="43" cy="83" rx="6" ry="4" fill="#f6a6a0"/>
-
-          <circle cx="55" cy="62" r="7.5" fill="#ffffff"/>
-          <circle cx="57" cy="64" r="3.8" fill="#1f3a4a"/>
-          <circle cx="59" cy="61" r="1.4" fill="#ffffff"/>
-
-          <path d="M34,88 Q48,101 64,90" stroke="#eaf7f2" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-          <circle cx="128" cy="16" r="3.5" fill="#a8e0cd"/>
-          <circle cx="136" cy="7" r="2.6" fill="#a8e0cd"/>
-          <circle cx="142" cy="-1" r="1.8" fill="#a8e0cd"/>
-        </svg>
+      <div class="whale-wrap">
+        <img class="whale-img" src="assets/whale.png" alt="Cute cartoon whale wearing a pink scarf">
       </div>
-      <p class="one">ONE</p>
       <h1>Milo is turning 1!</h1>
       <p class="subtitle">Dive in and celebrate with us 🐠</p>
     </header>
@@ -251,7 +213,7 @@
     <section class="card date-block">
       <h2 style="justify-content:center">📅 When</h2>
       <p class="date-big">Saturday, 3rd October 2026</p>
-      <p class="time-big">6:00 PM onwards</p>
+      <p class="time-big">Starting at 6:00 PM</p>
       <span class="countdown" id="countdown">Loading countdown…</span>
     </section>
 
