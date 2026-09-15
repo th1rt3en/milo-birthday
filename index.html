@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milo Turns One! 🎈</title>
+<style>
+  :root {
+    --sky: #bfe3f0;
+    --sky-deep: #7fc4de;
+    --cream: #fffaf0;
+    --gold: #f2b84b;
+    --navy: #2d3b4e;
+    --pink: #f6a6b2;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif;
+    background: linear-gradient(180deg, var(--sky) 0%, var(--cream) 45%);
+    color: var(--navy);
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+  header.hero {
+    text-align: center;
+    padding: 56px 20px 40px;
+  }
+  .balloons {
+    font-size: 2.4rem;
+    letter-spacing: 12px;
+    margin-bottom: 8px;
+  }
+  .one {
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.06);
+    line-height: 1;
+    margin: 0;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 10px 0 4px;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    color: #5a6b7d;
+    margin: 0;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(45,59,78,0.08);
+    padding: 28px 24px;
+    margin: 24px 0;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .date-block {
+    text-align: center;
+  }
+  .date-big {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--sky-deep);
+    margin: 6px 0;
+  }
+  .time-big {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin: 0 0 6px;
+  }
+  .countdown {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 18px;
+    background: var(--pink);
+    color: #fff;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+  .venue-name {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 0 0 4px;
+  }
+  .venue-address {
+    color: #5a6b7d;
+    margin: 0 0 16px;
+  }
+  .map-frame {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    border-radius: 12px;
+    display: block;
+  }
+  .directions-btn {
+    display: inline-block;
+    margin-top: 14px;
+    background: var(--sky-deep);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: bold;
+  }
+  .gift-section {
+    text-align: center;
+  }
+  .gift-section p {
+    color: #5a6b7d;
+  }
+  .qr-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    margin: 12px auto;
+    display: block;
+  }
+  .bank-details {
+    text-align: left;
+    background: #f6f8fa;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 16px auto 0;
+    max-width: 360px;
+    font-size: 0.95rem;
+  }
+  .bank-details dt {
+    color: #5a6b7d;
+    font-size: 0.8rem;
+    margin-top: 8px;
+  }
+  .bank-details dt:first-child { margin-top: 0; }
+  .bank-details dd {
+    margin: 0;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    color: #8a97a5;
+    font-size: 0.85rem;
+    padding-top: 10px;
+  }
+  .note {
+    font-size: 0.85rem;
+    color: #9aa5b1;
+    text-align: center;
+    margin-top: 6px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="balloons">🎈🎂🎈</div>
+      <p class="one">ONE</p>
+      <h1>Milo is turning 1!</h1>
+      <p class="subtitle">You're invited to celebrate with us</p>
+    </header>
+
+    <section class="card date-block">
+      <h2 style="justify-content:center">📅 When</h2>
+      <p class="date-big">Saturday, 3rd October 2026</p>
+      <p class="time-big">10:00 AM &ndash; 1:00 PM <span style="font-weight:normal; color:#9aa5b1;">(placeholder time)</span></p>
+      <span class="countdown" id="countdown">Loading countdown…</span>
+    </section>
+
+    <section class="card">
+      <h2>📍 Where</h2>
+      <p class="venue-name">Long Biên Palace</p>
+      <p class="venue-address">Ho Chi Minh City, Vietnam</p>
+      <iframe class="map-frame" loading="lazy"
+        src="https://www.google.com/maps?q=10.830082,106.6501376&z=16&output=embed"
+        allowfullscreen></iframe>
+      <div style="text-align:center;">
+        <a class="directions-btn" href="https://maps.app.goo.gl/rvqKp7EYrVrX3Wuo7" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+    </section>
+
+    <section class="card gift-section">
+      <h2 style="justify-content:center">🎁 Can't make it?</h2>
+      <p>No worries at all &mdash; your love means the world to us! If you'd like to send Milo a little birthday gift, you can scan the QR code below.</p>
+      <img class="qr-img" src="assets/qr-placeholder.svg" alt="Bank transfer QR code placeholder">
+      <dl class="bank-details">
+        <dt>Bank</dt>
+        <dd>[Your Bank Name]</dd>
+        <dt>Account Name</dt>
+        <dd>[Account Holder Name]</dd>
+        <dt>Account Number</dt>
+        <dd>[Account Number]</dd>
+      </dl>
+      <p class="note">Replace assets/qr-placeholder.svg with your real bank QR code image before publishing.</p>
+    </section>
+
+    <footer>
+      Made with 💙 for Milo's 1st Birthday
+    </footer>
+  </div>
+
+<script>
+  (function () {
+    var eventDate = new Date("2026-10-03T10:00:00");
+    var el = document.getElementById("countdown");
+
+    function update() {
+      var now = new Date();
+      var diff = eventDate - now;
+      if (diff <= 0) {
+        el.textContent = "It's party time! 🎉";
+        return;
+      }
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      el.textContent = days + (days === 1 ? " day to go!" : " days to go!");
+    }
+
+    update();
+    setInterval(update, 1000 * 60 * 60);
+  })();
+</script>
+</body>
+</html>
